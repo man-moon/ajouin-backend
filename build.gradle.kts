@@ -21,12 +21,12 @@ repositories {
 extra["springCloudVersion"] = "2023.0.0"
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("org.springframework.cloud:spring-cloud-bus")
 	implementation("org.springframework.cloud:spring-cloud-config-server")
-	implementation("org.springframework.cloud:spring-cloud-starter")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("org.springframework.boot:spring-boot-starter-actuator")
+	implementation("org.springframework.cloud:spring-cloud-starter-bus-amqp")
+	implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
 }
 
 dependencyManagement {
